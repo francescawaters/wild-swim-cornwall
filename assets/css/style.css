@@ -1,5 +1,6 @@
 /* Google fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend+Exa:wght@100..900&family=Oswald:wght@200..700&family=Poiret+One&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
 
 /* * wildcard selector is used to override defult styles added by the browser */
 * {
@@ -15,13 +16,13 @@ body {
     flex-direction: column;
     /* Generic Project Styles*/
     color: #3a3a3a;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lexend Exa', sans-serif;
 }
 
 h1,
 h2,
 h3 {
-    font-family: Oswald, sans-serif;
+    font-family: "Poiret One", sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525;
@@ -111,7 +112,7 @@ main {
 }
 
 #cover-text {
-    background-color: rgba(174, 232, 234, 0.7);
+    background-color: rgba(174, 232, 234, 0.85);
     font-size: 130%;
     position: absolute;
     bottom: 30px;
@@ -124,6 +125,11 @@ main {
 #cover-text>h2,
 #cover-text>h3 {
     color: #ffffff;
+}
+
+#hero hr {
+    border-top:1px solid #ffffff;
+    width: 75%;
 }
 
 /* Reasons section*/
@@ -143,21 +149,10 @@ main {
     padding: 0 20px;
 }
 
-#benefits-physical,
-#benefits-mental {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
 #benefits-physical>div,
 #benefits-mental>div {
-    width: 75%;
-}
-
-#benefits-mental>div {
-    text-align: end;
-    align-self: flex-end;
+    line-height: 20px;
+    margin: 20px 0;
 }
 
 #benefits-image {
