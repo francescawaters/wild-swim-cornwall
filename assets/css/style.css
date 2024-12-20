@@ -106,7 +106,7 @@ main {
 #hero {
     height: 600px;
     width: 100%;
-    background: url("../images/friends.jpeg") no-repeat center center/cover;
+    background: url("../images/friends.jpeg") no-repeat center right/cover;
     position: relative;
 }
 
@@ -127,6 +127,22 @@ main {
 }
 
  /* Reasons section*/
+
+ #reasons {
+    margin: 20px auto;
+    width: 90%;
+}
+
+#reasons h2 {
+    font-size: 280%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#benefits p {
+    padding: 0 20px;
+}
+
  #benefits-physical,
  #benefits-mental {
      display: flex;
@@ -143,6 +159,23 @@ main {
      text-align: end;
      align-self: flex-end;
  }
+
+ #benefits-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#circle-cover-bg {
+    background: url("../images/reasons-image.jpeg") no-repeat center right/cover;
+    width: 90vw;
+    height: 90vw;
+    margin-bottom: 20px;
+    /* to make square div into circle*/
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
+}
 
 /* Media Query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
