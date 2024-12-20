@@ -106,7 +106,7 @@ main {
 #hero {
     height: 600px;
     width: 100%;
-    background: url("../images/friends.jpeg") no-repeat center right/cover;
+    background: url("../images/waterfall.jpeg") no-repeat center center/cover;
     position: relative;
 }
 
@@ -175,6 +175,26 @@ main {
     border-radius: 50%;
     max-width: 300px;
     max-height: 300px;
+}
+
+/* Meetup Times Section*/
+#times {
+    background: url("../images/ocean.jpeg") no-repeat center center/cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#times div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6);
+    text-align: center;
+    padding: 15px;
+    flex: 1 1 200px;
+    border: 2px solid #ffffff;
+}
+
+#times h3 {
+    color: #fafafa;
 }
 
 /* Media Query: tablets and larger (768px and up) */
