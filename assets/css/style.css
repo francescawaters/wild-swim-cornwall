@@ -111,7 +111,7 @@ main {
 }
 
 #cover-text {
-    background-color:rgba(174, 232, 234, 0.7);
+    background-color: rgba(174, 232, 234, 0.7);
     font-size: 130%;
     position: absolute;
     bottom: 30px;
@@ -126,9 +126,9 @@ main {
     color: #ffffff;
 }
 
- /* Reasons section*/
+/* Reasons section*/
 
- #reasons {
+#reasons {
     margin: 20px auto;
     width: 90%;
 }
@@ -143,31 +143,31 @@ main {
     padding: 0 20px;
 }
 
- #benefits-physical,
- #benefits-mental {
-     display: flex;
-     flex-direction: column;
-     width: 100%;
- }
+#benefits-physical,
+#benefits-mental {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 
- #benefits-physical>div,
- #benefits-mental>div {
-     width: 75%;
- }
+#benefits-physical>div,
+#benefits-mental>div {
+    width: 75%;
+}
 
- #benefits-mental>div {
-     text-align: end;
-     align-self: flex-end;
- }
+#benefits-mental>div {
+    text-align: end;
+    align-self: flex-end;
+}
 
- #benefits-image {
+#benefits-image {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #circle-cover-bg {
-    background: url("../images/reasons-image.jpeg") no-repeat center right/cover;
+    background: url("../images/smiling.jpeg") no-repeat center center/cover;
     width: 90vw;
     height: 90vw;
     margin-bottom: 20px;
@@ -196,6 +196,17 @@ main {
 #times h3 {
     color: #fafafa;
 }
+
+/* Gallery Page*/
+#photos img {
+    width: 100%;
+    line-height: 1em;
+}
+
+#photos {
+    line-height: 0;
+}
+
 /*Footer*/
 #social-networks {
     text-align: center;
@@ -210,6 +221,15 @@ main {
     padding: 5%;
     color: #3a3a3a;
 }
+
+/* Media Query: Large or landscape phones (567px and up) */
+@media screen and (min-width: 567px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+
 /* Media Query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
 
@@ -239,35 +259,49 @@ main {
         line-height: 75px;
         margin: 0 0.5rem;
     }
-        /* Main Content */
-        main {
-            margin-top: 79px;
-        }
-    
-        /* Hero */
-        #cover-text {
-            width: 300px;
-            right: 50px;
-        }
-    
-        /* Reasons section*/
-        #benefits-physical,
-        #benefits-mental {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-        }
-    
-        #benefits-physical>div,
-        #benefits-mental>div {
-            width: 75%;
-        }
-    
-        #benefits-mental>div {
-            text-align: end;
-            align-self: flex-end;
-        }
+
+    /* Main Content */
+    main {
+        margin-top: 79px;
+    }
+
+    /* Hero */
+    #cover-text {
+        width: 300px;
+        right: 50px;
+    }
+
+    /* Reasons section*/
+    #benefits-physical,
+    #benefits-mental {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #benefits-physical>div,
+    #benefits-mental>div {
+        width: 75%;
+    }
+
+    #benefits-mental>div {
+        text-align: end;
+        align-self: flex-end;
+    }
 }
+
+/* Media Query: laptops and larger (992px and up) */
+@media screen and (min-width: 992px) {
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
+    }
+
+    /* Gallery*/
+    #photos {
+        column-count: 4;
+    }
+}
+
 /* Media Query: desktops and larger (1200px and up) */
 @media screen and (min-width: 1200px) {
 
